@@ -12,7 +12,8 @@
 # TODOs
 
 * avoid cheating
- * everything is stored server-side and available for inspection
+ * just use hints if you get stuck ;)
+ * scoreboard is stored server-side and available for inspection
 
 # Bonus
 
