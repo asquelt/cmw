@@ -172,7 +172,7 @@ if opts[:progress] || noargs then
     failures.each { |x| puts " _ #{x}" }
   end
   puts "", "You successfully completed #{successes.length} tasks, out of a total of #{total} tasks!".cyan
-  puts "", "==> Don't forget to check out hints and docus for this quest\n==> at: https://github.com/asquelt/cmw/docs/#{name}.md".green
+  puts "", "==> Don't forget to check out hints and docus for this quest\n==> at: https://github.com/asquelt/cmw/blob/master/docs/#{name}.md".green
   puts "", "Happy hacking!".bold
 end
 
