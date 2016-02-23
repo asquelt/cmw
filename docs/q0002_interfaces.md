@@ -1,7 +1,11 @@
 # Command line!
 
 * puppet 4 does a good job on exposing its components with single "puppet" command, ie.
- * ```puppet facts``` - will 
+ * ```puppet facts``` - will replace older ```facter -p``` (lists all facts, including those pluginsynced from puppet modules)
+ * ```puppet lookup``` - will replace ```hiera``` command, but also covers new [data in modules](https://docs.puppetlabs.com/puppet/latest/reference/lookup_quick_module.html) schema
+ * ```puppet resource``` - will allow you to interact with system resources with puppet syntax
+  * it's easier to realize after using how puppet compares resources it finds in system with those defined with manifests and makes sync decisions
+ * ```puppet cert``` - manages certificates, replaces older ```puppet ca```
 * unfortunately ```puppet help``` is not that great
  * [documentation is awesome](https://docs.puppetlabs.com/puppet/)
  * especially [type reference](https://docs.puppetlabs.com/puppet/latest/reference/type.html) and [cheat sheet](https://docs.puppetlabs.com/puppet_core_types_cheatsheet.pdf)

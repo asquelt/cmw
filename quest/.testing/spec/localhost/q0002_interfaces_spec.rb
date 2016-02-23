@@ -40,19 +40,25 @@ describe "task 6:" do
 end
 
 describe "task 7:" do
+  it 'list all /etc/hosts entries as puppet resources' do
+    file('/root/.bash_history').content.should match /puppet\s+resource\s+host/
+  end
+end
+
+describe "task 8:" do
   it 'generate certificate for "foo.acme.com"' do 
     file('/root/.bash_history').content.should match /puppet\s+cert\s+generate/
     file('/etc/puppetlabs/puppet/ssl/certs/foo.acme.com.pem').should be_file
   end
 end
 
-describe "task 8:" do
+describe "task 9:" do
   it 'list all certificates known to your CA' do 
     file('/root/.bash_history').content.should match /puppet\s+cert\s+list\s+--all/
   end
 end
 
-describe "task 9:" do
+describe "task 10:" do
   it 'try to find easter egg in "puppet help" ;)' do 
     file('/root/.bash_history').content.should match /puppet\s+(help\s*){5}/
   end
