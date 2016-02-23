@@ -14,9 +14,12 @@
 * avoid cheating
   * just use hints if you get stuck ;)
   * scoreboard is stored server-side and available for inspection
+* think how you could use serverspec in your environment
+  * it's completely independent of puppet, and in fact used by many others CM tools ([ansible](http://sharknet.us/2014/02/04/infrastructure-testing-with-ansible-and-serverspec-part-1/), [chef](http://kitchen.ci/))
 
 # Bonus
 
 * check out how tmux gets info about quest progress
 * check out how scoreboard is updated
   * please don't attempt to hack my scoreboard server, thank you ;)
+  * please don't publish ghosts, only humans!
