@@ -18,7 +18,9 @@
   * try to discover command line
   * track your progress
   * the whole quest idea comes from [puppet learning vm](https://github.com/puppetlabs/courseware-lvm/blob/master/Quest_Guide/)
-    * but it uses opensource components!
+    * but we'll use only opensource components!
+    * to save some memory, we won't be using puppet-server (jdk/clojure app, requires 4GB)
+      * you can still play with it, by [downloading puppet learning vm](https://puppetlabs.com/download-learning-vm)
 
 # Bonus
 

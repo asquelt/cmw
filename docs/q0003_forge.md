@@ -11,9 +11,9 @@
   * clear module layout
     * ```puppet module generate``` will provide it for you
     * [several nice module skeletons available](https://github.com/garethr/puppet-module-skeleton)
-  * [platform (and mysql flavor) independent](https://github.com/puppetlabs/puppetlabs-mysql/blob/master/manifests/params.pp)
+  * [platform (and mysql flavor) independent](https://github.com/puppetlabs/puppetlabs-mysql/blob/master/manifests/params.pp#L35)
     * new data-in-modules feature will make those params.pp finally go away
-  * [with clear class-to-class relationships](https://github.com/puppetlabs/puppetlabs-mysql/blob/master/manifests/server.pp)
+  * [with clear class-to-class relationships](https://github.com/puppetlabs/puppetlabs-mysql/blob/master/manifests/server.pp#L77)
     * Class[a]->Class[b] dash-arrow provides relationship
     * Class[b]~>Class[c] tilde-arrow provides refresh (say: remounts mountpoints, reloads services in Class[c] when Class[b] changes)
     * Anchor[start] and Anchor[stop] allow you to bookend your classes
@@ -23,7 +23,7 @@
 # TODOs
 
 * install WhatsARanjit-vim module
-  * apply it for root with ```puppet apply -e 'package { 'ruby': ensure => installed } ; include vim; vim::vim_profile { 'root': }'```
+  * apply it for root with ```puppet apply -e 'package { 'ruby': ensure => installed } ; include vim ; vim::vim_profile { 'root': }'```
     * note how you can use handy code oneliners with puppet 4 "future-is-now" parser
   * now your vim will highlight syntax and validate code for you on save!
     * you might need to make your puppet-lint global for vim: ```ln -s /opt/quest/gems/gems/puppet-lint-1.1.0/bin/puppet-lint /usr/bin/puppet-lint```
