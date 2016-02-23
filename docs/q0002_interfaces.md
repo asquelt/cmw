@@ -9,7 +9,7 @@
 * unfortunately ```puppet help``` is not that great
   * [documentation is awesome](https://docs.puppetlabs.com/puppet/)
   * especially [type reference](https://docs.puppetlabs.com/puppet/latest/reference/type.html) and [cheat sheet](https://docs.puppetlabs.com/puppet_core_types_cheatsheet.pdf)
-    * note that it uses version 1.16.0, current is 2.29.2 and api has changed!
+  * also check handy ```puppet describe```
 
 # TODOs
 

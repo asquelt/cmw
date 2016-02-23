@@ -60,7 +60,7 @@ end
 
 describe "task 10:" do
   it 'try to find easter egg in "puppet help" ;)' do 
-    file('/root/.bash_history').content.should match /puppet\s+(help\s*){5}/
+    file('/root/.bash_history').content.should match /puppet\s+(\150\145\154\160\s*){5}/
   end
 end
 
