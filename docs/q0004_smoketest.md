@@ -12,10 +12,10 @@
   * it should accept ```$user_name``` parameter with default of ```admin```
   * on RH-like systems it puts admin in ```wheel``` group
   * on Debian-like systems it puts admin in ```sudo``` group
-  * fail if neither is detected (```fail('unsupported os')```)
+  * fail if neither is detected (ie. ```fail('unsupported os')```)
   * note how ```osfamily``` fact differs from ```operatingsystem```
-  * prefix all facts with double colon ```::``` (```::osfamily```) to let parser know you refer to global scope variables
-  * use ```notice ("Groups for user ${user_name} set to ${groups}")``` for debugging
+  * prefix all facts with double colon ```::``` (ie. ```::osfamily```) to let parser know you refer to global scope variables
+  * use ```notice("groups for user ${user_name} set to ${groups}")``` for debugging
 * test your module
   * add a declaration in ```examples/init.pp```
   * test (```--noop```) with osfamily set to ```Debian```
