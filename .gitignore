@@ -1,6 +1,5 @@
 *~
 .vagrant/*
-quest/.testing/spec/localhost/recycled/*
 quest/.testing/log.yml
 scoreboard/p4h/data/*
 scoreboard/p4h/db/*
