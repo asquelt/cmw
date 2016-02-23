@@ -9,8 +9,8 @@
 
 ## If anything breaks
 
-* Please ask me
-  * I had to adjust some modules a bit to run on ubuntu (Puppetlabs uses centos)
+* Please ask me (@asq or @asquelt)
+  * I had to adjust some modules a bit to run on ubuntu (Puppetlabs uses Centos)
 
 ## Do some hacking
 
@@ -35,3 +35,9 @@
 * Hack
 * Send me a pull request
 * And shout at event's [slack](https://cmw2016.slack.com/messages/p4h/)!
+
+# Excersices credits
+
+* [puppetlabs/courseware-lvm](https://github.com/puppetlabs/courseware-lvm)
+* [purpleidea/p4h](https://github.com/purpleidea/p4h)
+

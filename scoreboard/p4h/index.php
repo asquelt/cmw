@@ -60,7 +60,7 @@ function process_get() {
     }
   }
   if ($objs) {
-    array_multisort($data, SORT_DESC, $scores, SORT_DESC, $currents);
+    array_multisort($scores, SORT_DESC, SORT_NUMERIC, $currents, SORT_DESC, $data);
   }
   if ($_SERVER["QUERY_STRING"] == 'json') {
     header('Content-type: application/json');
@@ -96,6 +96,15 @@ strong {
     font-weight: normal;
     text-shadow: -1px -1px 0 #642C76, 1px -1px 0 #642C76, -1px 1px 0 #642C76, 1px 1px 0 #642C76;
 }
+
+a {
+    text-decoration: none;
+    color: #9F80A9;
+}
+
+a:hover {
+    color: #BAA4C1;
+}
 </style>
 </head>";
   #print "<pre>";
@@ -107,7 +116,7 @@ strong {
     print "<tr><td colspan=\"4\">No one has entered yet.</td></tr>\n";
   } else {
     foreach ($data as $k => $v) {
-      print "<tr><td>".$place++.".</td><td><strong>".$k."</strong></td><td>".$v['current']."</td><td><strong>".$v['score']."</strong></td></tr>\n";
+      print "<tr><td>".$place++.".</td><td><strong>".$k."</strong></td><td><a href=\"https://github.com/asquelt/cmw/blob/master/docs/".$v['current'].".md\">".ucfirst($v['current'])."</a></td><td><strong>".$v['score']."</strong></td></tr>\n";
     }
   }
   print "</table>";
