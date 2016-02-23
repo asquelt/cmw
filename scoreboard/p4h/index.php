@@ -54,6 +54,14 @@ function process_get() {
           $data[$input['nickname']]['score'] += $v['tasks_done'];
         }
       }
+
+      if (file_exists('./db/'.$input['nickname'].'-extra')) {
+        $extra = unserialize(file_get_contents('./db/'.$input['nickname'].'-extra'));
+        $data[$input['nickname']]['score'] += $extra;
+      } else {
+        file_put_contents('./db/'.$input['nickname'].'-extra', serialize(0));
+      }
+
       $scores[$input['nickname']] = $data[$input['nickname']]['score'];
       $currents[$input['nickname']] = $data[$input['nickname']]['current'];
       $objs++;
