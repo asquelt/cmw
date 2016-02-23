@@ -20,6 +20,6 @@
 # Bonus
 
 * check out how tmux gets info about quest progress
-* check out how scoreboard is updated
+* [check out how scoreboard is updated](../scoreboard/p4h/index.php)
   * please don't attempt to hack my scoreboard server, thank you ;)
   * please don't publish ghosts, only humans!

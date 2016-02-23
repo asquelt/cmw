@@ -14,8 +14,8 @@
   * [platform (and mysql flavor) independent](https://github.com/puppetlabs/puppetlabs-mysql/blob/master/manifests/params.pp)
     * new data-in-modules feature will make those params.pp finally go away
   * [with clear class-to-class relationships](https://github.com/puppetlabs/puppetlabs-mysql/blob/master/manifests/server.pp)
-    * Class[a]->Class[b] (dash-arrow) provides relationship
-    * Class[b]~>Class[c] (tilde-arrow) provides refresh (say: remounts mountpoints, reloads services in Class[c] when Class[b] changes)
+    * Class[a]->Class[b] dash-arrow provides relationship
+    * Class[b]~>Class[c] tilde-arrow provides refresh (say: remounts mountpoints, reloads services in Class[c] when Class[b] changes)
     * Anchor[start] and Anchor[stop] allow you to bookend your classes
   * [modules are provided with sane security configuration](https://github.com/puppetlabs/puppetlabs-mysql/blob/master/manifests/server/account_security.pp)
     * but sometimes - like here - you'd need to opt-in to use them
