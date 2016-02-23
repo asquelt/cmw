@@ -31,4 +31,4 @@
 # Next
 
 * we'll learn how quest evaluates your progress
-  * let's go: ```quest --start Q0001_testing```
+  * let's go: ```quest --start Q01_testing```

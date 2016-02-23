@@ -15,7 +15,7 @@
 ## Do some hacking
 
 * Login as root (```vagrant ssh``` and ```sudo -i```)
-* Run your 1st quest (```quest --start Q0000_welcome``` and ```quest --progress```)
+* Run your 1st quest (```quest --start Q00_welcome``` and ```quest --progress```)
 * Check out some more (```quest --list```)
 * Enjoy!
 
