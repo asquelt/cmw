@@ -18,7 +18,7 @@
   * use ```notice("groups for user ${user_name} set to ${groups}")``` for debugging
 * test your module
   * add a declaration in ```examples/init.pp```
-  * test (```--noop```) with osfamily set to ```Debian```
-  * test (```--noop```) with osfamily set to ```RedHat```
-  * test (```--noop```) with osfamily set to unsupported value
-* use your module to create user ```p4h``` with ```sudo``` group
+  * test (```--noop```) with osfamily set to ```Debian``` (how to overwrite fact values on the fly?)
+  * test (```--noop```) with osfamily set to ```RedHat``` (same trick)
+  * test (```--noop```) with osfamily set to unsupported value (same trick)
+* use your module to create user ```p4h``` with ```sudo``` group (ie. matching your debian/ubuntu)
