@@ -25,6 +25,7 @@
   * add some forge and some github modules to p4h branch
 * create p4h puppet environment with r10k
   * you might want to link from ```/opt/quest/gems/gems/r10k-1.5.1/bin/r10k``` to ```/usr/bin/r10k```
+  * you might want to backup your prior work in ```/etc/puppetlabs/code/environments/production``` as r10k wipes everything that is not defined in Puppetfile
 * create a "legacy" branch with some other versions (refs or semvers) of the same modules
 * create legacy puppet environment with r10k
 * make a hook so r10k updates puppet ater every commit to "puppet-control" repository
