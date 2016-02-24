@@ -1,0 +1,17 @@
+
+#0: welcome to puppet for hackers quest.
+
+#1: please join our slack for questions: https://cmw2016.slack.com/messages/p4h/
+
+#2: use "quest" tool as root, which is meant to keep you busy ;)
+
+    ( btw. it's the same tool that learning vm uses, so you might want to take a look afterwards: https://puppetlabs.com/download-learning-vm )
+
+#3: put your code in /etc/puppetlabs/code/environments/production/modules/quest#{n}/ so our robot can assess it and give you some points.
+
+#4: ask wonderful questions!
+
+#5: give us a shout on twitter with #puppetizewarsaw!
+
+happy hacking!
+
