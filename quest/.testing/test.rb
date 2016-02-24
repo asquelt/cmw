@@ -73,7 +73,7 @@ end
 
 if do_init == 1
   initialize_yaml = Hash.new()
-  initialize_yaml["current"] = "q0000_welcome"
+  initialize_yaml["current"] = "q00_welcome"
   File.open('/root/.testing/log.yml', 'w') {|f| f.write initialize_yaml.to_yaml }
 end
 
