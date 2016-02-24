@@ -50,7 +50,7 @@ function process_get() {
       unset($data[$input['nickname']]['secret']);
       unset($data[$input['nickname']]['remark']);
       foreach ($input as $k => $v) {
-        if ($v['tasks_done']) {
+        if (preg_match("/^q/",$k) and $v['tasks_done']) {
           $data[$input['nickname']]['score'] += $v['tasks_done'];
         }
       }
